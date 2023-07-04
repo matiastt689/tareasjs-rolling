@@ -63,7 +63,6 @@ else if (numeroIngresadodiv % 2 == 0) {
     else if (numeroIngresadodiv2 % 2 == 0 && numeroIngresadodiv2 % 5 == 0 ) { 
       console.log(`El número ${numeroIngresadodiv2} es divisble por 2 y 5`);} 
 
-
     else if (numeroIngresadodiv2 % 2 == 0) { 
       console.log(`El número ${numeroIngresadodiv2} es divisble por 2 🤩`);} 
       
