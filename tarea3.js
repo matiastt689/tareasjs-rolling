@@ -10,21 +10,26 @@ let credito= dinero*0.5
 switch(true) {
     case credito < 1:
         console.log('No posee credito suficiente para acceder a ninguna Sala')
+        console.log('Tu saldo disponible es de'+ credito)
         break;
     case credito <2:
         console.log('Usted puede acceder a la sala Arcade unicamente')
+        console.log(("Tu saldo disponible es de" +" "+ (credito-1)))
         break;
-    
+
         case credito <3:
         console.log('Usted puede acceder a la sala Arcade y Consolas')
+        console.log(("Tu saldo disponible es de" +" "+ (credito-2)))
         break;  
 
      case credito <4:
         console.log('Usted puede acceder a la sala Arcade, Rol y Consolas')
+        console.log(("Tu saldo disponible es de" +" "+ (credito-3)))
         break;
 
     case credito >=4:
     console.log('Usted puede acceder a todas las consolas')
+    console.log(("Tu saldo disponible es de" +" "+ (credito-4)))
     break;
 
     default:

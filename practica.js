@@ -41,3 +41,4 @@ console.log(num1 >= num3);
 // Comparar si la primera variable es distinta de la segunda
 console.log(num1 != num2);
 
+
