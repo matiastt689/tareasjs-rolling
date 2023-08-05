@@ -1,28 +1,26 @@
-const calcularAreaCuadro= function(lado) {
+const numeros=[100,20,40,50,55,44,1023]
 
-console.log (`El area del cuadrado es ${lado * lado} cm2`);
+numeros.sort()
 
-}
+let numeros2 = numeros.sort((a,b)=>a - b)
 
-let persona= prompt ("Ingrese su nombre de usuario")
-function saludarUsuario (usuario='Invitado'){
-    console.log(`Hola ${usuario} Bienvenido!!`);
-}
+let pares= numeros.filter((numero)=>{
 
-saludarUsuario (persona)
+return numero % 2 == 0;
+})
 
-calcularDescuento(2000)
+let mayorCincuenta= numeros.filter((numero) => numero>50);
 
-function calcularDescuento (precio, descuento=15){
+alumnos=['Matias','Tomas','Martin','Jimena','Gonzalo','Alfredo','Matias',"Martin"]
 
-    let descuentoCalculado= 100 - descuento
-    let montoConDescuento = (precio*descuentoCalculado)/100
-    console.log (`El importe a abonar es de ${montoConDescuento}`);
-}
+let resultadoBusqueda= alumnos.find((alumno)=>{
+return alumno=='Alfredo';
+})
 
-const cotizacionDolarHoy = function(importe=1, dolar=262){
-        let calcular= importe*dolar
-        console.log(`Dolar: $ ${importe} / Pesos Argentinos: $ ${calcular}`)
-};
+let resultadoFilter= alumnos.filter((alumno)=>{
+return alumno == "Martin";
+});
 
-cotizacionDolarHoy(200);
+alumnos.forEach ((alumno) => {
+  console.log(`Hola soy ${alumno.toUpperCase()}`); 
+ });
